@@ -1,0 +1,20 @@
+<nz-card class="ant-card-body m-1" >
+    <div class="detail-container">
+      
+        <img nz-image  [nzSrc]="item.url" alt="" />
+        <div class="cart-detail">
+            <b class="m-1" style="font-size: 20px;font-weight: bolder;">{{item.name}}</b>
+        
+            <span class="m-1" style="font-size: 18px;">{{item.price | currencyUsd }}</span>
+            <span class="m-1" style="font-size: 18px;">{{item.description  }}</span>
+            <div class="m-1">
+                <nz-select  [(ngModel)]="item.quantity">
+                    <nz-option [nzLabel]="item.toString()" *ngFor="let item of quantityList" [nzValue]="item">
+                    </nz-option>
+                </nz-select>
+            </div>
+            <button class="m-1"  nz-button nzType="primary" (click)="addToCart(item)">Add to cart</button>
+        </div>
+    </div>
+
+</nz-card>

@@ -1,0 +1,28 @@
+img {
+  border-radius: 10px;
+  width: 320px;
+}
+
+.detail-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 64px;
+}
+
+
+.back-link {
+  margin-top: 8px;
+}
+nz-select{
+  width: 150px;
+}
+button{
+  width: 150px;
+}
+.cart-detail {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+  gap: 1em;
+}

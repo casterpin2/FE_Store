@@ -1,0 +1,31 @@
+.ant-card-body {
+  text-align: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cart-detail {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+  gap: 1em;
+}
+
+.span-total {
+  font-weight: bolder;
+  font-size: 25px;
+  padding: 0.5em;
+}

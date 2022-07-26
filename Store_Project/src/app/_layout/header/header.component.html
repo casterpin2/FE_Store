@@ -1,0 +1,21 @@
+<header class="main-header">
+    <!-- Nav Menu -->
+    <!-- First Menu -->
+    <nav class="bg-light">
+        <h4>My Store</h4>
+
+    </nav>
+    <!-- Nav Menu -->
+    <nav class="bg-dark">
+        <ul nz-menu nzMode="horizontal" nzTheme="dark" class="menu auto-width-layout px-0 bg-dark">
+            <ng-container *ngFor="let item of dataMenu; index as i">
+                <li nz-menu-item>
+                    <a routerLink={{item.routerLink}}><i nz-icon nzType={{item.icon}}></i> {{item.title}}</a>
+                </li>
+            </ng-container>
+
+        </ul>
+    </nav>
+
+    <!-- End -->
+</header>

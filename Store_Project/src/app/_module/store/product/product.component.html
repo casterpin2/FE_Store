@@ -1,0 +1,24 @@
+<div nz-row>
+    <div *ngFor="let item of productList" nz-col nzSpan="8">
+        <nz-card class="ant-card-body m-1" [nzActions]="[actionAdd]">
+            <div class="flex-column"(click)="routerDetail(item.id)">
+                <div class="img" >
+                    <img nz-image width="200px"  height="200px" [nzSrc]="item.url" alt="" />
+                </div>
+                <span>{{item.name}}</span>
+                <b>{{item.price | currencyUsd }}</b>
+            </div>
+
+        </nz-card>
+
+        <ng-template #actionAdd>
+            <div class="m-1">
+                <nz-select  [(ngModel)]="item.quantity">
+                    <nz-option [nzLabel]="item.toString()" *ngFor="let item of quantityList" [nzValue]="item">
+                    </nz-option>
+                </nz-select>
+            </div>
+            <button  nz-button nzType="primary" (click)="addToCart(item)">Add to cart</button>
+        </ng-template>
+    </div>
+</div>
