@@ -3,6 +3,7 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 import { CartDataService } from '@models/cart.mode';
 import { ProductModel } from '@models/product.model';
 import { StoreService } from '@services/store.service';
+import { FormHelper } from '@share/_helper/form-helper';
 import { min } from 'rxjs';
 
 @Component({
@@ -52,7 +53,10 @@ export class ShoppingCartComponent implements OnInit {
 
   }
   public submit() {
-
+    if (!this.form.valid) {
+      FormHelper.markDirty(this.form);
+      return;
+    }
   }
-  handleOk(){}
+
 }
