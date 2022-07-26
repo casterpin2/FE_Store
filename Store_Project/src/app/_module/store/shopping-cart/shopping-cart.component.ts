@@ -15,7 +15,7 @@ export class ShoppingCartComponent implements OnInit {
   productList: ProductModel[] = [];
   form: FormGroup;
   total: number = 0;
-  isVisible : boolean = false;
+  isSubmit : boolean = false;
   constructor(
     private cartDataService: CartDataService,
     private service: StoreService,
@@ -53,10 +53,12 @@ export class ShoppingCartComponent implements OnInit {
 
   }
   public submit() {
+   
     if (!this.form.valid) {
       FormHelper.markDirty(this.form);
       return;
     }
+    this.isSubmit = true;
   }
 
 }
