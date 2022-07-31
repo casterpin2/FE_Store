@@ -1,7 +1,11 @@
+## Store
+
+Project : Store
 # Admin Theme v1.0
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
-
+### Instal
+Run `npm install` insall node module of project.
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -30,15 +34,6 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Running dev IE=11
 
 Run `ng serve --configuration es5`
-
-## Build stg
-
-Run `ng build --configuration=stg` to build the project. The build artifacts will be stored in the `dist/` directory. 
-
-Run `node --max-old-space-size=8192  node_modules/@angular/cli/bin/ng build --configuration=stg` to build the project when have error memory. The build artifacts will be stored in the `dist/` directory. 
-
-## Build QA Can Debug
-Run `node --max-old-space-size=8192  node_modules/@angular/cli/bin/ng build --configuration=uat --source-map` to build the project. The build artifacts will be stored in the `dist/` directory. 
 
 ## Further help
 Run `npm i -save-dev node-sass` if see error combine css.

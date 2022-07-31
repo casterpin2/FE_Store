@@ -6,8 +6,8 @@
 }
 
 body {
-    background-color: $color_bg !important;
-    background: $color_bg !important;
+    background-color: $color_bg  !important;
+    background: $color_bg  !important;
     height: 100vh !important;
     font-family: "lucida grande", tahoma, verdana, arial, sans-serif !important;
 }
@@ -97,9 +97,11 @@ i {
 .p-0 {
     padding: 0.5rem;
 }
+
 .p-1 {
     padding: 1rem;
 }
+
 .p-2 {
     padding: 2rem;
 }
@@ -134,7 +136,8 @@ i {
     min-height: 280px;
     margin-top: 4px;
     overflow: unset;
-    & > div {
+
+    &>div {
         &.main-content {
             min-height: 280px;
             padding: 5px 10px;
@@ -142,6 +145,7 @@ i {
             display: grid;
         }
     }
+
     .header-actions {
         display: grid;
         min-height: 33px;
@@ -202,9 +206,11 @@ sidebar-checkbox {
 .hide {
     display: none;
 }
+
 .m-1 {
     margin: 0.5em !important;
 }
+
 .mr-1 {
     margin-right: 0.5em;
 }
@@ -224,14 +230,12 @@ sidebar-checkbox {
 
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-image: -webkit-gradient(
-        linear,
-        left bottom,
-        left top,
-        color-stop(0.44, #2092bc8a),
-        color-stop(0.72, #2092bc9c),
-        color-stop(0.86, #1b8ab3)
-    );
+    background-image: -webkit-gradient(linear,
+            left bottom,
+            left top,
+            color-stop(0.44, #2092bc8a),
+            color-stop(0.72, #2092bc9c),
+            color-stop(0.86, #1b8ab3));
 }
 
 
@@ -240,7 +244,13 @@ sidebar-checkbox {
 .text-right {
     text-align: right;
 }
+
 .text-center {
     text-align: center;
 }
 
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

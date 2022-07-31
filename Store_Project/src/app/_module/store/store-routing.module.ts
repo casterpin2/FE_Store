@@ -12,10 +12,6 @@ const routes: Routes = [
     component:ProductComponent,    
   },
   {
-    path:'product/new',
-    component:ProductDetailComponent,    
-  },
-  {
     path:'product/:id',
     component:ProductDetailComponent,    
   },

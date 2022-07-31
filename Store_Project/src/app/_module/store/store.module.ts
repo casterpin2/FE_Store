@@ -14,7 +14,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { SharedPipesModule } from '@share/_shared-component/_pipes/shared-pipes.module';
 import { StoreService } from '@services/store.service';
-import { CartDataService } from '@models/cart.mode';
+import { CartDataService } from '@models/cart.model';
+import { DirectiveModule } from '@share/_directives/directive.module';
+import { BreadcrumModule } from '@share/_shared-component/breadcrumb/breadcrumb.module';
+
 
 
 @NgModule({
@@ -31,7 +34,9 @@ import { CartDataService } from '@models/cart.mode';
     InitNgZorroAntdModule,
     FormsModule,
     SharedPipesModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    DirectiveModule,
+    BreadcrumModule
   ],
   providers: [StoreService,CartDataService]
 })
