@@ -1,6 +1,7 @@
 ## Store
 
 Project : Store
+Store application. There are features such as view all products, view each product, Add to cart.
 # Admin Theme v1.0
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
