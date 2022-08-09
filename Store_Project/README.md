@@ -4,7 +4,8 @@ Project : Store Store application. There are features such as view all products,
 
 ### Built With
 
-* [![Angular][Angular.io]][Angular-url]
+* Angular
+* Ant-design
 
 #### Getting Started
 - git clone https://github.com/casterpin2/FE_Store.git
